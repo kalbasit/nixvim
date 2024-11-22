@@ -79,6 +79,17 @@
     }
     {
       mode = "n";
+      key = "gw";
+      action = ''
+        :s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR>`'
+      '';
+      options = {
+        desc = "Swap two words";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
