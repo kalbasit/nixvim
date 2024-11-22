@@ -34,6 +34,15 @@
     }
     {
       mode = "n";
+      key = "<leader>md";
+      action = ":!mkdir -p %:p:h<CR>";
+      options = {
+        desc = "Create the directory containing the file in the buffer";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
