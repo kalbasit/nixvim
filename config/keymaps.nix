@@ -1,5 +1,5 @@
 {
-  globals.mapleader = ",";
+  globals.mapleader = " ";
 
   plugins.vim-colemak.enable = true;
 
