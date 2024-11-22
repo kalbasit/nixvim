@@ -114,7 +114,7 @@
     {
       mode = "n";
       key = "<leader>wa";
-      action = ":%bd<CR>";
+      action = ":%bd<CR><CR>";
       options = {
         desc = "Close all buffers";
         silent = true;
