@@ -108,6 +108,15 @@
     }
     {
       mode = "n";
+      key = "<leader>ww";
+      action = ":wall<CR>";
+      options = {
+        desc = "Save all buffers";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
