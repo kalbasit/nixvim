@@ -6,6 +6,17 @@
   keymaps = [
     {
       mode = "n";
+      key = "<leader>gf";
+      # TODO: This action has a bug that it creates a file relative to Vim's
+      # CWD as opposed to being relative to the buffer. My existing Nvim
+      # suffers from the same bug, I'm leaving a note for myself to fix it.
+      action = ":e <cfile><CR>";
+      options = {
+        desc = "Open file at cursor even if non-existing";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
