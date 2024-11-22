@@ -60,9 +60,6 @@
       # Disable spell checking
       spell = false;
 
-      # Disable swap file creation
-      swapfile = false;
-
       # Time in milliseconds to wait for a mapped sequence to complete
       timeoutlen = 300;
 
