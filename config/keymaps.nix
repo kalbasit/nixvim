@@ -42,6 +42,15 @@
       };
     }
     {
+      # http://vimcasts.org/e/14
+      mode = "n";
+      key = "<leader>ew";
+      action = ":e <C-R>=expand('%:h').'/'<CR>";
+      options = {
+        desc = "Open a file from the same directory in the current buffer";
+      };
+    }
+    {
       mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
