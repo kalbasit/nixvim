@@ -90,6 +90,15 @@
     }
     {
       mode = "n";
+      key = "<leader>fc";
+      action = "<ESC>/\v^[<=>]{7}( .*\|$)<CR>";
+      options = {
+        desc = "Find merge conflict markers";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
