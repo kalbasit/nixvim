@@ -61,11 +61,6 @@
             "CopilotChat"
             "ct"
           ]
-          [
-            "󰧑 SecondBrain"
-            "edit ~/projects/personal/SecondBrain"
-            "sb"
-          ]
         ];
         highlight = "string";
         defaultColor = "";
