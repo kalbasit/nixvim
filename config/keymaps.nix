@@ -99,6 +99,15 @@
     }
     {
       mode = "n";
+      key = "<leader>hs";
+      action = ":set hlsearch! hlsearch?<CR>";
+      options = {
+        desc = "Toggle hlsearch";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
