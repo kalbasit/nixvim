@@ -69,6 +69,9 @@
       # Ignore case when searching
       ignorecase = true;
 
+      # Remember undo chains between sessions
+      undofile = true;
+
       # Don't show mode in the command line
       showmode = false;
 
