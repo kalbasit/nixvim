@@ -51,6 +51,15 @@
       };
     }
     {
+      # http://vimcasts.org/e/14
+      mode = "n";
+      key = "<leader>es";
+      action = ":sp <C-R>=expand('%:h').'/'<CR>";
+      options = {
+        desc = "Open a file from the same directory in a horizontal split";
+      };
+    }
+    {
       mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
