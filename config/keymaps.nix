@@ -69,6 +69,15 @@
       };
     }
     {
+      # http://vimcasts.org/e/14
+      mode = "n";
+      key = "<leader>et";
+      action = ":tabe <C-R>=expand('%:h').'/'<CR>";
+      options = {
+        desc = "Open a file from the same directory in a new tab";
+      };
+    }
+    {
       mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
