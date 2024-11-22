@@ -17,6 +17,14 @@
     }
     {
       mode = "n";
+      key = "<leader>=";
+      action = ":normal! gg=G``<CR>";
+      options = {
+        desc = "Format the entire file";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
