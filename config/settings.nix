@@ -66,6 +66,9 @@
       # Enable 24-bit RGB color in the TUI
       termguicolors = true;
 
+      # Ignore case when searching
+      ignorecase = true;
+
       # Don't show mode in the command line
       showmode = false;
 
