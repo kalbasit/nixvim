@@ -45,8 +45,8 @@
       # Minimum number of screen lines to keep above and below the cursor
       scrolloff = 8;
 
-      # Enable mouse support
-      mouse = "a";
+      # Disable mouse support
+      mouse = "";
 
       # Set folding method to manual
       foldmethod = "manual";
