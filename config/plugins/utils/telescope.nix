@@ -50,7 +50,7 @@
           desc = "Find project files";
         };
       };
-      "<leader>fr" = {
+      "<leader>fg" = {
         action = "live_grep";
         options = {
           desc = "Find text";
@@ -62,7 +62,7 @@
           desc = "Resume";
         };
       };
-      "<leader>fg" = {
+      "<leader>fr" = {
         action = "oldfiles";
         options = {
           desc = "Recent";
