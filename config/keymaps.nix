@@ -117,6 +117,15 @@
     }
     {
       mode = "n";
+      key = "<leader>wa";
+      action = ":%bd<CR>";
+      options = {
+        desc = "Close all buffers";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
