@@ -5,7 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixvim = {
-      url = "github:nix-community/nixvim";
+      # url = "github:nix-community/nixvim";
+      url = "github:kalbasit/nix-community_nixvim/colemak";
     };
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
