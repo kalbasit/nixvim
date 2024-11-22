@@ -26,6 +26,15 @@
     {
       mode = "n";
       key = "<leader>cd";
+      action = ":lcd %:h<CR>";
+      options = {
+        desc = "Change to the directory containing the file in the buffer";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>cd";
       action = "vim.diagnostic.open_float";
       options = {
         desc = "Line Diagnostics";
