@@ -1,8 +1,4 @@
 {
-  globals.mapleader = " ";
-
-  plugins.vim-colemak.enable = true;
-
   keymaps = [
     {
       mode = "n";
