@@ -8,8 +8,7 @@
 
     nixvim = {
       inputs.nixpkgs.follows = "nixpkgs";
-      # url = "github:nix-community/nixvim";
-      url = "github:kalbasit/nix-community_nixvim/colemak";
+      url = "github:nix-community/nixvim";
     };
 
     pre-commit-hooks = {
