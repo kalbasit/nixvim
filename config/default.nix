@@ -30,6 +30,7 @@ _: {
     ./plugins/editor/todo-comments.nix
     ./plugins/editor/copilot-chat.nix
     ./plugins/editor/navic.nix
+    ./plugins/editor/multicursors.nix
 
     # UI plugins
     ./plugins/ui/bufferline.nix
