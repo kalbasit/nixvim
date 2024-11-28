@@ -40,27 +40,27 @@
           [
             " Find File"
             "Telescope find_files"
-            "ff"
+            "<leader>ff"
           ]
           [
             "󰍉 Find Word"
             "Telescope live_grep"
-            "fg"
+            "<leader>fr"
           ]
           [
             " Recent Files"
             "Telescope oldfiles"
-            "fr"
+            "<leader>fr"
           ]
           [
             " File Browser"
             "Telescope file_browser"
-            "fe"
+            "<leader>fe"
           ]
           [
             " Copilot Chat"
             "CopilotChat"
-            "ct"
+            "<leader>ct"
           ]
         ];
         highlight = "string";
