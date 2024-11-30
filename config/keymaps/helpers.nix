@@ -87,7 +87,7 @@
     {
       mode = "n";
       key = "<leader>fc";
-      action = "<ESC>/\v^[<=>]{7}( .*\|$)<CR>";
+      action = "<ESC>/\\v^[<=>]{7}( .*\|$)<CR>";
       options = {
         desc = "Find merge conflict markers";
         silent = true;
