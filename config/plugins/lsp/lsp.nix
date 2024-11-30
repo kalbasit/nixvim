@@ -134,6 +134,7 @@
   };
   extraPlugins = with pkgs.vimPlugins; [
     ansible-vim
+    vim-go
   ];
 
   extraConfigLua = ''
