@@ -1,6 +1,16 @@
 {
   plugins = {
-    vim-colemak.enable = true;
+    cmp.settings.mapping = {
+      "<C-Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+      "<C-e>" = "cmp.mapping.select_next_item()";
+      "<C-i>" = "cmp.mapping.select_prev_item()";
+      "<C-c>" = "cmp.mapping.abort()";
+      "<C-b>" = "cmp.mapping.scroll_docs(-4)";
+      "<C-f>" = "cmp.mapping.scroll_docs(4)";
+      "<C-Space>" = "cmp.mapping.complete()";
+      "<C-CR>" = "cmp.mapping.confirm({ select = true })";
+      "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
+    };
 
     mini = {
       modules = {
@@ -209,5 +219,23 @@
         ">" = "next_source";
       };
     };
+
+    telescope = {
+      extensions = {
+        undo = {
+          settings = {
+            mappings = {
+              n = {
+                "c" = "require('telescope-undo.actions').yank_additions";
+                "C" = "require('telescope-undo.actions').yank_deletions";
+                "z" = "require('telescope-undo.actions').restore";
+              };
+            };
+          };
+        };
+      };
+    };
+
+    vim-colemak.enable = true;
   };
 }
