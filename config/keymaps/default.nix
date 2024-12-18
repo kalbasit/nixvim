@@ -4,5 +4,5 @@
     ./helpers.nix
   ];
 
-  globals.mapleader = " ";
+  globals.mapleader = ",";
 }
