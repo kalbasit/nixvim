@@ -38,6 +38,14 @@
       };
     }
     {
+      mode = "n";
+      key = "<leader><leader>";
+      action = "<C-^>";
+      options = {
+        desc = "Swap to previous buffer";
+      };
+    }
+    {
       # http://vimcasts.org/e/14
       mode = "n";
       key = "<leader>ew";
