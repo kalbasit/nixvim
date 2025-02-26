@@ -19,6 +19,20 @@
       }
     ];
 
+    "ftdetect/helm.lua".autoCmd = [
+      {
+        group = "filetypes";
+        event = [
+          "BufRead"
+          "BufNewFile"
+        ];
+        pattern = [
+          "*.helm"
+        ];
+        command = "set ft=helm";
+      }
+    ];
+
     "ftdetect/terraformft.lua".autoCmd = [
       {
         group = "filetypes";
