@@ -56,4 +56,7 @@ _: {
     ./plugins/utils/toggleterm.nix
     ./plugins/utils/web-devicons.nix
   ];
+
+  viAlias = true;
+  vimAlias = true;
 }
