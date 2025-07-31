@@ -44,19 +44,31 @@
         let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
-          nixvimModule = {
+
+          full = nixvim'.makeNixvimWithModule nvimFullModule;
+          nvimFullModule = {
             inherit pkgs;
-            module = import ./config; # import the module directly
+            module = import ./config/full.nix;
+            extraSpecialArgs = {
+              # inherit (inputs) foo;
+            };
+          };
+
+          small = nixvim'.makeNixvimWithModule nvimSmallModule;
+          nvimSmallModule = {
+            inherit pkgs;
+            module = import ./config/minimal.nix;
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
               # inherit (inputs) foo;
             };
           };
-          nvim = nixvim'.makeNixvimWithModule nixvimModule;
         in
         {
           checks = {
-            default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
+            full = nixvimLib.check.mkTestDerivationFromNixvimModule nvimFullModule;
+            small = nixvimLib.check.mkTestDerivationFromNixvimModule nvimSmallModule;
+
             pre-commit-check = pre-commit-hooks.lib.${system}.run {
               src = ./.;
               hooks = {
@@ -69,7 +81,12 @@
           formatter = pkgs.nixfmt-rfc-style;
 
           packages = {
-            default = nvim;
+            inherit
+              full
+              small
+              ;
+
+            default = full;
           };
 
           devShells = {

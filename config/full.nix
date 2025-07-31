@@ -1,4 +1,4 @@
-_: {
+{
   imports = [
     # General Configuration
     ./settings.nix
